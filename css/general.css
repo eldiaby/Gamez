@@ -1,0 +1,38 @@
+/* start of global sittings */
+:root {
+  --main-theme-color: #2196f3;
+  --main-theme-color: #1787e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 
+*::selection {
+
+} */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+/* End of global sittings */
+/* ====================================================================================== */
+/* start of global component */
