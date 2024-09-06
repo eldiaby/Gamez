@@ -2,6 +2,7 @@
 :root {
   --main-theme-color: #2196f3;
   --main-theme-color: #1787e0;
+  --transform-duration: 1s;
 }
 
 * {
@@ -26,6 +27,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {

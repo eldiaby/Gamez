@@ -1,4 +1,58 @@
 /* start of  header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 0 0.1rem #ddd;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.header-logo {
+  color: var(--main-theme-color);
+  font-size: 2.4rem;
+  font-weight: 900;
+  height: 7.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-main-nav {
+  display: flex;
+}
+.header-main-nav > li > a {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.2rem;
+  padding: 0 3.2rem;
+  position: relative;
+  transition: var(--transform-duration);
+  overflow: hidden; /*for the line transithon*/
+}
+.header-main-nav > li > a::before {
+  content: "";
+  height: 0.5rem;
+  width: 100%;
+  background-color: var(--main-theme-color);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: var(--transform-duration);
+}
+.header-main-nav > li > a:hover {
+  color: var(--main-theme-color);
+  background-color: #fafafa;
+}
+
+.header-main-nav > li > a:hover::before {
+  left: 0;
+}
 
 /* End of  header */
 /* ========================================================================================== */
