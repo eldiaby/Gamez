@@ -1,8 +1,8 @@
 /* start of global sittings */
 :root {
   --main-theme-color: #2196f3;
-  --main-theme-color: #1787e0;
-  --transform-duration: 1s;
+  --alt-theme-color: #1787e0;
+  --transform-duration: 0.3s;
 }
 
 * {
@@ -21,6 +21,7 @@ html {
 
 body {
   font-family: "Cairo", sans-serif;
+  /* background-color: #eee;*/
 }
 
 ul {

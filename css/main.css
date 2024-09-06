@@ -25,7 +25,7 @@
 .header-main-nav > li > a {
   color: #000;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +56,91 @@
 
 /* End of  header */
 /* ========================================================================================== */
-/* Start of  landign section */
+/* Start of landing section */
+.section-landing {
+  background-color: #eee;
+}
+.section-landing > .container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing-text {
+  text-align: center;
+}
+.landign-main-headign {
+  font-size: 4.2rem;
+  margin: 0;
+  letter-spacing: -0.1rem;
+}
 
-/* End of  contact section */
+.landign-main-headign > span {
+  color: var(--main-theme-color);
+  /*text-transform: uppercase;*/
+}
+.landign-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  max-width: 100%;
+}
+.landing-image {
+  animation: up-and-down 5s linear infinite;
+  position: relative;
+}
+.landig-go-down-btn {
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--main-theme-color);
+  font-size: 3.4rem;
+  transition: var(--transform-duration);
+}
+
+.landig-go-down-btn:hover {
+  color: var(--alt-theme-color);
+}
+
+.landig-go-down-btn i {
+  animation: bouncey 1.5s linear infinite;
+}
+/* Start header animation */
+@keyframes up-and-down {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes bouncey {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: (translateY(0));
+  }
+  40%,
+  60% {
+    transform: translateY(-2rem);
+  }
+}
+/* Etart header animation */
+/* End of landing section */
+/* ========================================================================================== */
+/* Start of                section */
+
+/* End of             section */
 /* ========================================================================================== */
 /* Start of  footer */
 
