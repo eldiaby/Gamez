@@ -94,10 +94,19 @@
   position: relative;
 }
 
+.mega-menu-link::after {
+  content: "";
+  background-color: #eee;
+  width: 100%;
+  height: 0.5rem;
+  bottom: -1.5rem;
+  left: 0;
+  position: absolute;
+  z-index: -2;
+}
 .mega-menu-link::before {
   content: "";
   background-color: var(--main-theme-color);
-  width: 100%;
   height: 0.5rem;
   bottom: -1.5rem;
   position: absolute;
