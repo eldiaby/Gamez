@@ -229,6 +229,7 @@
   overflow: hidden;
   transition: box-shadow var(--transform-duration),
     transform var(--transform-duration);
+  margin: 0;
 }
 
 .game-card:hover {
