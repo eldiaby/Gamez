@@ -5,6 +5,7 @@
   --transform-duration: 0.3s;
   --main-sections-padding-top: 10rem;
   --main-sections-padding-botton: 10rem;
+  --section-background: #ececec;
 }
 
 * {

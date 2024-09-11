@@ -134,6 +134,7 @@
   background-color: #eee;
 }
 .section-landing > .container {
+  padding-top: var(--main-sections-padding-top);
   height: 80vh;
   display: flex;
   align-items: center;
@@ -246,13 +247,16 @@
   max-width: 100%;
 }
 
+.game-details {
+  padding: 2.4rem;
+}
+
 .game-details h3 {
   font-size: 2.4rem;
   margin: 0 0 1.4rem;
 }
 
 .game-details p {
-  padding: 2.4rem;
   font-size: 1.4rem;
   color: #777;
 }
@@ -285,6 +289,29 @@
 }
 
 /* End of game gallery section */
+/* ========================================================================================== */
+/* Start of  new games section */
+
+.section-new {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background);
+}
+.section-new > .container {
+  gap: 4.2rem;
+}
+.new-post {
+  padding: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 1.2rem 2rem 0 rgba(0, 0, 0, 0.13),
+    0 2rem 4rem 0 rgba(0, 0, 0, 0.12);
+}
+
+.new-post video {
+  max-width: 100%;
+}
+
+/* End of new games section */
 /* ========================================================================================== */
 /* Start of                section */
 
