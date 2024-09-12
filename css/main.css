@@ -318,6 +318,7 @@
 .section-features {
   padding-top: var(--main-sections-padding-top);
   padding-bottom: var(--main-sections-padding-botton);
+  background-color: #fff;
 }
 .section-features > .container {
   gap: 2.4rem;
@@ -418,6 +419,60 @@
 }
 
 /* End of feature section */
+/* ========================================================================================== */
+/* Start of testimonials section */
+
+.section-testimonials {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background);
+}
+.section-testimonials > .container {
+  gap: 4.2rem;
+}
+.testimonial {
+  padding: 2.4rem;
+  background-color: #fff;
+  position: relative;
+}
+.testimonial img {
+  max-width: 100%;
+  position: absolute;
+  right: -1rem;
+  top: -4rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.8rem solid var(--section-background);
+}
+
+.testimonial-name {
+  font-size: 1.8rem;
+  margin: 0 0 1.2rem;
+}
+
+.testimonial-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  /* color: #777; */
+  color: var(--main-theme-color);
+  margin: 0 0 1.8rem 1.2rem;
+  display: block;
+}
+.rate {
+}
+.filled {
+  color: #ffc107;
+}
+
+.testimonial p {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  /* color: #777; */
+  line-height: 1.8;
+}
+
+/* End of testimonials section */
 /* ========================================================================================== */
 /* Start of                section */
 
