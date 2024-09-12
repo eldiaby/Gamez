@@ -313,6 +313,112 @@
 
 /* End of new games section */
 /* ========================================================================================== */
+/* Start of feature section */
+
+.section-features {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+}
+.section-features > .container {
+  gap: 2.4rem;
+}
+.feature {
+  border: 0.1rem solid #ccc;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  text-align: center;
+}
+/* ///////////////////////////////////////// */
+/* features styling */
+.feature--quality .feature-image::before {
+  background-color: rgba(244, 64, 54, 0.6);
+}
+.feature--quality .feature-title::before {
+  background-color: rgb(244, 64, 54);
+}
+
+.feature--quality a {
+  color: rgb(244, 64, 54);
+  background: linear-gradient(to right, #f44036 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.feature--time .feature-image::before {
+  background-color: rgba(0, 150, 135, 0.6);
+}
+.feature--time .feature-title::before {
+  background-color: #009688;
+}
+
+.feature--time a {
+  color: #009688;
+  background: linear-gradient(to right, #009688 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.feature--passion .feature-image::before {
+  background-color: rgba(3, 168, 244, 0.6);
+}
+.feature--passion .feature-title::before {
+  background-color: rgba(3, 168, 244, 0.6);
+}
+
+.feature--passion a {
+  color: #03a9f4;
+  background: linear-gradient(to right, #03a9f4 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+/* ////////////////////////////////////// */
+.feature-image {
+}
+
+.feature-image img {
+  max-width: 100%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  margin: auto;
+  position: relative;
+  width: fit-content;
+}
+
+.feature-title::before {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  bottom: -1rem;
+  width: calc(100% - 3rem);
+  height: 0.3rem;
+}
+.feature-descripe {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #777;
+  padding: 1.8rem;
+  margin: 1.2rem 1rem;
+}
+
+.feature a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1.2rem;
+  font-size: 1.8rem;
+  border: 0.1rem currentColor solid;
+  padding: 1.2rem 2.4rem;
+  transition: var(--transform-duration);
+}
+
+.feature:hover a {
+  background-position: left bottom;
+  color: #fff;
+}
+
+/* End of feature section */
+/* ========================================================================================== */
 /* Start of                section */
 
 /* End of             section */

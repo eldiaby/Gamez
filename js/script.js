@@ -7,5 +7,5 @@ for (const vidoe of newSectionVidoes) {
   vidoe.addEventListener("mouseover", (e) => vidoe.play());
 }
 for (const vidoe of newSectionVidoes) {
-  vidoe.addEventListener("mouseout", () => vidoe.pause());
+  vidoe.addEventListener("mouseleave", () => vidoe.pause());
 }
