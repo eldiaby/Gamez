@@ -474,6 +474,101 @@
 
 /* End of testimonials section */
 /* ========================================================================================== */
+/* Start of team member section */
+
+.section-members {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  /* background-color: var(--section-background-alt); */
+  /* position: relative;
+  z-index: -3; */
+}
+
+.section-members > .container {
+  gap: 4.2rem;
+}
+
+.member {
+  padding: 2.4rem;
+  position: relative;
+}
+
+.member::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #f3f3f3;
+  z-index: -2;
+}
+
+.member::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e4e4e4;
+  z-index: -1;
+  transition: var(--transform-duration);
+}
+
+.member:hover::after {
+  width: 80%;
+}
+
+.member-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.member-data img {
+  width: 80%;
+  transition: var(--transform-duration);
+}
+
+.member:hover img {
+  filter: grayscale(100%);
+}
+.member-social {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.member-social a {
+  margin: 1rem 0;
+}
+.member-social i {
+  color: #777;
+  font-size: 2.4rem;
+}
+.member-social i:hover {
+  color: var(--main-theme-color);
+}
+.member-info {
+}
+.member-info h4 {
+  font-size: 2.4rem;
+  color: var(--main-theme-color);
+  margin-bottom: 0;
+}
+.member-info h5 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #777;
+}
+.member-info p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* End of team member section */
+/* ========================================================================================== */
 /* Start of                section */
 
 /* End of             section */
