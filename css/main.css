@@ -498,7 +498,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-color: #f3f3f3;
   z-index: -2;
@@ -517,7 +517,7 @@
 }
 
 .member:hover::after {
-  width: 80%;
+  width: 100%;
 }
 
 .member-data {
@@ -568,6 +568,114 @@
 }
 
 /* End of team member section */
+/* ==========================================================================================*/
+/* Start of services section */
+
+.section-services {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background);
+}
+.section-services > .container {
+  gap: 4.2rem;
+}
+.service {
+  background-color: var(--section-background-alt);
+  box-shadow: 0 1.2rem 2rem 0 rgba(0, 0, 0, 13%),
+    0 2rem 4rem 0 rgba(0, 0, 0, 12%);
+  position: relative;
+  transition: var(--transform-duration);
+  text-align: center;
+  counter-increment: services;
+}
+
+.service:hover {
+  transform: translateY(-1.2rem);
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  top: -0.3rem;
+  right: 50%;
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--main-theme-color);
+  transition: var(--transform-duration);
+}
+
+.service::after {
+  content: "";
+  position: absolute;
+  top: -0.3rem;
+  left: 50%;
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--main-theme-color);
+  transition: var(--transform-duration);
+}
+
+.service:hover::before,
+.service:hover::after {
+  width: 50%;
+}
+
+.service > i {
+  font-size: 6.4rem;
+  margin: 4.2rem auto 0;
+  color: #d4d4d4;
+}
+.service > h3 {
+  font-size: 2.4rem;
+  color: var(--main-theme-color);
+  margin: 2.4rem 0 4.2rem;
+}
+
+.service-info {
+  position: relative;
+}
+
+.service-info::before {
+  content: "0" counter(services);
+  font-size: 2.4rem;
+  font-weight: 800;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--main-theme-color);
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.service-info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  height: 100%;
+  width: 20%;
+  background-color: #d4d4d4;
+  transform: skewX(-30deg);
+}
+
+.service-info a {
+  color: #000;
+  font-size: 1.8rem;
+  text-align: right;
+  display: block;
+  padding: 1.8rem;
+  transition: var(--transform-duration);
+}
+
+.service-info a:hover {
+  letter-spacing: 0.2rem;
+}
+
+/* End of services section */
 /* ========================================================================================== */
 /* Start of                section */
 
