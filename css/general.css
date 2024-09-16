@@ -56,6 +56,7 @@ a {
   position: relative;
   z-index: 1;
   transition: var(--transform-duration);
+  cursor: pointer;
 }
 .main-section-title::before,
 .main-section-title::after {

@@ -587,6 +587,7 @@
   transition: var(--transform-duration);
   text-align: center;
   counter-increment: services;
+  overflow-x: hidden;
 }
 
 .service:hover {
@@ -599,7 +600,7 @@
   top: -0.3rem;
   right: 50%;
   width: 0;
-  height: 0.3rem;
+  height: 0.8rem;
   background-color: var(--main-theme-color);
   transition: var(--transform-duration);
 }
@@ -610,7 +611,7 @@
   top: -0.3rem;
   left: 50%;
   width: 0;
-  height: 0.3rem;
+  height: 0.8rem;
   background-color: var(--main-theme-color);
   transition: var(--transform-duration);
 }
@@ -633,6 +634,7 @@
 
 .service-info {
   position: relative;
+  cursor: pointer;
 }
 
 .service-info::before {
@@ -660,6 +662,13 @@
   width: 20%;
   background-color: #d4d4d4;
   transform: skewX(-30deg);
+  transition: width var(--transform-duration);
+}
+
+.service-info:hover::after {
+  width: 100%;
+  z-index: -1;
+  background-color: var(--main-theme-color);
 }
 
 .service-info a {
@@ -671,11 +680,132 @@
   transition: var(--transform-duration);
 }
 
-.service-info a:hover {
+.service-info:hover a {
+  text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 
 /* End of services section */
+/* ========================================================================================== */
+/* Start of skills section */
+
+.section-ratting {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background-alt);
+  /* position: relative;
+  z-index: -2; */
+}
+
+.section-ratting > .container {
+}
+
+.skills-image {
+}
+.rattings {
+}
+.ratting {
+}
+.ratting h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.ratting h3 > span {
+  color: var(--main-theme-color);
+  border: 0.1rem solid #777;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+}
+.skill-meter > span {
+  width: 85%;
+  display: block;
+  height: 1.4rem;
+  background-color: var(--main-theme-color);
+  border-radius: 1.2rem;
+}
+
+.skill-meter {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  background-color: #777;
+}
+
+/* End of skills section */
+/* ========================================================================================== */
+/* Start of  how it works section */
+
+.section-how-works {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background);
+}
+
+.section-how-works > .container {
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.how-works-content {
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem;
+  background-color: #f6f5f5;
+  border: 0.2rem solid #fff;
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+  transition: var(--transform-duration);
+  position: relative;
+  z-index: 1;
+}
+
+.work::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: #ededed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: var(--transform-duration);
+}
+
+.work:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.work img {
+  width: 15%;
+  max-width: 100%;
+  margin-right: 2.4rem;
+}
+.work-text {
+}
+.work-text h3 {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  margin-top: 0;
+}
+.work-text p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #777;
+}
+/* End of how it works section */
+/* ========================================================================================== */
+/* Start of                section */
+
+/* End of             section */
 /* ========================================================================================== */
 /* Start of                section */
 
