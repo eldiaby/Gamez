@@ -803,9 +803,131 @@
 }
 /* End of how it works section */
 /* ========================================================================================== */
-/* Start of                section */
+/* Start of event section */
 
-/* End of             section */
+.section-event {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background-alt);
+}
+
+.section-event > .container {
+  gap: 4.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-image img {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.event-time {
+  width: 100%;
+  display: flex;
+  gap: 10%;
+  margin: 2.4rem auto;
+  justify-content: center;
+}
+
+.event-time > .unit {
+  text-align: center;
+  width: 7.2rem;
+  border: 0.2rem solid #d4d4d4;
+  border-radius: 0.8rem;
+  transition: var(--transform-duration);
+  cursor: pointer;
+}
+
+.event-time > .unit span {
+  display: block;
+}
+
+.event-time > .unit span:first-child {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--main-theme-color);
+  padding: 0.8rem;
+}
+.event-time > .unit span:last-child {
+  padding: 0.8rem;
+  border-top: 0.2rem solid #d4d4d4;
+  transition: var(--transform-duration);
+}
+
+.event-time > .unit:hover,
+.event-time > .unit:hover span:last-child {
+  border-color: var(--main-theme-color);
+}
+
+.event-text {
+  text-align: center;
+  margin: 3.2rem auto 4.8rem;
+}
+
+.event-text h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.event-text p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  letter-spacing: 0.12rem;
+  font-weight: 700;
+  color: #777;
+}
+
+.enent-form {
+  display: flex;
+  gap: 2.4rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: stretch;
+  width: 80vw;
+  border: solid 1.8rem #f6f5f5;
+  border-radius: 5.2rem;
+  background-color: #d4d4d4;
+  padding: 2.4rem;
+}
+
+.enent-form input[type="email"] {
+  width: 75%;
+  padding: 0.8rem 1.6rem;
+  caret-color: var(--main-theme-color);
+  font-size: 1.8rem;
+  outline: none;
+  caret-shape: underscore;
+  border-radius: 5.2rem;
+  border: none;
+}
+
+.enent-form input[type="email"]::placeholder {
+  /* transition: var(--transform-duration); */
+  transition: opacity 1s;
+}
+.enent-form input[type="email"]:hover::placeholder {
+  opacity: 0;
+}
+
+.enent-form input[type="submit"] {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background-color: var(--main-theme-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.6rem;
+  border-radius: 5.2rem;
+  color: var(--section-background-alt);
+  transition: var(--transform-duration);
+}
+
+.enent-form input[type="submit"]:hover {
+  background-color: var(--alt-theme-color);
+}
+/* End of event section */
 /* ========================================================================================== */
 /* Start of                section */
 
