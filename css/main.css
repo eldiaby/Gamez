@@ -1000,6 +1000,10 @@
   width: 100%;
 }
 
+.pricing-card.popular {
+  transform: translateY(-1.2rem);
+}
+
 .pricing-titile {
   font-size: 2.4rem;
   font-weight: 900;
@@ -1068,9 +1072,80 @@
 
 /* End of pricing plans section */
 /* ========================================================================================== */
-/* Start of                section */
+/* Start of top vidoe gamessection */
 
-/* End of             section */
+.section-top {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background-alt);
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--section-background);
+  border: 0.1rem solid #ddd;
+}
+
+.top-vidoe-title {
+  min-width: 32rem;
+  background-color: var(--section-background-alt);
+}
+.top-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+  /* color: var(--main-theme-color); */
+}
+
+.top-heading i {
+  cursor: pointer;
+}
+.top-games-list {
+}
+.top-games-list li {
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-top: 0.2rem solid var(--section-background-alt);
+  font-size: 1.8rem;
+}
+
+.top-games-list li:hover {
+  background-color: #fafafa;
+  color: var(--main-theme-color);
+}
+
+.top-games-list span {
+  display: block;
+  margin-top: 1.2rem;
+  color: #777;
+}
+.top-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem;
+  background-color: #e2e2e2;
+}
+
+.top-preview img {
+  max-width: 100%;
+}
+
+.top-preview > .info {
+  font-size: 2.4rem;
+  background-color: var(--section-background-alt);
+  padding: 2.4rem;
+  margin-top: 1.8rem;
+  min-height: 3.2rem;
+  font-weight: 700;
+}
+
+/* End of top vidoe games section */
 /* ========================================================================================== */
 /* Start of  footer */
 
