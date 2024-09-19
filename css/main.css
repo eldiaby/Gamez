@@ -929,6 +929,145 @@
 }
 /* End of event section */
 /* ========================================================================================== */
+/* Start of pricing plans section */
+
+.section-pricing {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  background-color: var(--section-background);
+}
+.section-pricing > .container {
+  gap: 4.2rem;
+}
+.pricing-card {
+  box-shadow: 0 1.2rem 2rem 0 rgba(0, 0, 0, 13%),
+    0 2rem 4rem 0 rgba(0, 0, 0, 12%);
+  position: relative;
+  background-color: var(--section-background-alt);
+  padding: 2.4rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.pricing-card::before,
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  background: #f6f6f6;
+  height: 50%;
+  width: 0;
+  z-index: -1;
+  transition: var(--transform-duration) linear;
+}
+
+.label {
+  position: absolute;
+  /* transform: rotate(90deg); */
+  background-color: var(--main-theme-color);
+  padding: 1.8rem 1.8rem 4.2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 0.18rem;
+  writing-mode: vertical-lr;
+  top: -1.2rem;
+  right: 1.2rem;
+  width: 5.2rem;
+}
+
+.label::before {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-color: transparent transparent white transparent;
+  border-width: 2.6rem;
+  border-style: solid;
+}
+
+.pricing-card::before {
+  left: 0;
+  top: 0;
+}
+
+.pricing-card::after {
+  right: 0;
+  bottom: 0;
+}
+
+.pricing-card:hover::before,
+.pricing-card:hover::after {
+  width: 100%;
+}
+
+.pricing-titile {
+  font-size: 2.4rem;
+  font-weight: 900;
+  /* color: var(--main-theme-color); */
+  letter-spacing: 0.25rem;
+  margin: 2.4rem auto;
+}
+
+.pricing-image {
+  width: 30%;
+  margin-bottom: 4.2rem;
+}
+.pricing-price {
+  margin-bottom: 2.4rem;
+}
+.pricing-amount {
+  display: block;
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--main-theme-color);
+  margin-bottom: 1.2rem;
+}
+.pricing-time {
+  color: #777;
+  font-size: 1.4rem;
+}
+.pricing-list {
+  text-align: left;
+}
+
+.pricing-list li {
+  padding: 2.4rem;
+  border-top: 0.15rem solid #eee;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-list li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-right: 2.4rem;
+  color: var(--main-theme-color);
+}
+
+.pricing-btn {
+  display: block;
+  width: fit-content;
+  margin: 2.4rem auto;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--main-theme-color);
+  border: 0.25rem solid currentColor;
+  padding: 1.2rem 2.4rem;
+  transition: var(--transform-duration);
+  border-radius: 0.8rem;
+}
+
+.pricing-btn:hover {
+  color: #fff;
+  background-color: var(--alt-theme-color);
+}
+
+/* End of pricing plans section */
+/* ========================================================================================== */
 /* Start of                section */
 
 /* End of             section */
