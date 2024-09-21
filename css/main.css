@@ -1147,6 +1147,88 @@
 
 /* End of top vidoe games section */
 /* ========================================================================================== */
+/* Start of  status section */
+
+.section-status {
+  padding-top: var(--main-sections-padding-top);
+  padding-bottom: var(--main-sections-padding-botton);
+  position: relative;
+  background-color: var(--section-background);
+}
+
+.stat-main-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.section-status > .container {
+  gap: 2.4rem;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.75;
+  padding: 2.4rem;
+  position: relative;
+  background-color: var(--section-background-alt);
+  transition: 1s;
+}
+
+.stat:hover {
+  opacity: 1;
+}
+
+.stat::before,
+.stat::after {
+  content: "";
+  position: absolute;
+  width: 1%;
+  height: 0;
+  background-color: var(--main-theme-color);
+  transition: 1s;
+}
+
+.stat::before {
+  left: 0;
+  top: 0;
+}
+
+.stat::after {
+  right: 0;
+  bottom: 0;
+}
+
+.stat:hover::before,
+.stat:hover::after {
+  height: 100%;
+}
+
+.stat i {
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.stat .number {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 1.2rem auto 0.8rem;
+}
+.stat .text {
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--main-theme-color);
+}
+
+/* End of top status section */
+/* ========================================================================================== */
+/* Start of                  section */
+/* End of top               section */
+/* ========================================================================================== */
 /* Start of  footer */
 
 /* End of  footer */
