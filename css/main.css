@@ -1153,7 +1153,13 @@
   padding-top: var(--main-sections-padding-top);
   padding-bottom: var(--main-sections-padding-botton);
   position: relative;
-  background-color: var(--section-background);
+  /* background-color: var(--section-background); */
+  background-image: url("../imgs/stats.jpg");
+  background-size: cover;
+}
+
+.section-status::before {
+  background-color: rgba(255, 255, 255, 85%);
 }
 
 .stat-main-heading {
@@ -1226,8 +1232,105 @@
 
 /* End of top status section */
 /* ========================================================================================== */
-/* Start of                  section */
-/* End of top               section */
+/* Start of discount section */
+
+.section-discount {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-discount .content {
+  padding: 2.4rem;
+  text-align: center;
+}
+
+.discount-image {
+  background-image: url("../imgs/discount-background1.jpg");
+  background-size: cover;
+  flex-basis: 50%;
+  color: #fff;
+  animation: change-background 10s linear infinite;
+}
+
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url("../imgs/discount-background1.jpg");
+  }
+  50% {
+    background-image: url("../imgs/discount-background2.jpg");
+  }
+}
+
+.discount-image::before {
+  background-color: rgba(23, 135, 224, 95%);
+}
+
+.section-discount h3 {
+  font-size: 3.2rem;
+  letter-spacing: -0.15rem;
+  text-transform: capitalize;
+}
+
+.discount-image p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.section-discount .content img {
+  width: 32rem;
+  max-width: 100%;
+}
+
+.discount-form {
+  flex-basis: 50%;
+}
+
+.discount-form form {
+}
+
+.discount-form form .input {
+  display: block;
+  width: 100%;
+  margin-bottom: 3.2rem;
+  padding: 1.8rem;
+  caret-color: var(--main-theme-color);
+  border: none;
+  border-bottom: 0.2rem solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 1.8rem;
+}
+
+.discount-form form .input:focus {
+  outline: none;
+}
+
+.discount-form form textarea {
+  resize: none;
+  height: 20rem;
+}
+
+.discount-form form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--main-theme-color);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: var(--transform-duration);
+}
+
+.discount-form form input[type="submit"]:hover {
+  background-color: var(--alt-theme-color);
+}
+
+/* End of discount section */
 /* ========================================================================================== */
 /* Start of  footer */
 
