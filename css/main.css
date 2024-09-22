@@ -145,7 +145,7 @@
   text-align: center;
 }
 .landign-main-headign {
-  font-size: 4.2rem;
+  font-size: 5.6rem;
   margin: 0;
   letter-spacing: -0.1rem;
 }
@@ -1333,5 +1333,149 @@
 /* End of discount section */
 /* ========================================================================================== */
 /* Start of  footer */
+
+.footer {
+  background-color: #191919;
+  padding: calc(var(--main-sections-padding-top) / 2) 0 0 0;
+}
+
+.footer > .container {
+  gap: 2.4rem;
+}
+
+.footer-unit {
+}
+
+.footer-unit h3 {
+  font-size: 3.2rem;
+  color: #fff;
+  margin: 0 0 1.8rem 0;
+  font-weight: 700;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-icon {
+  margin-right: 1.2rem;
+}
+
+.footer-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: #313131;
+  color: #b9b9b9;
+  transition: var(--transform-duration);
+  font-size: 1.8rem;
+}
+
+.footer-icon a:hover {
+  font-size: 3.2rem;
+}
+
+.footer-icon:hover .facebook {
+  background-color: #1877f2;
+}
+.footer-icon:hover .twitter {
+  background-color: #1da1f2;
+}
+.footer-icon :hover.youtube {
+  background-color: #ff0000;
+}
+.footer-icon:hover .githup {
+  background-color: #4078c0;
+}
+.footer-icon:hover .linkedin {
+  background-color: #0a66c2;
+}
+
+.footer-icon i {
+}
+
+.footer-text {
+  line-height: 1.8;
+  color: #b9b9b9;
+  font-size: 1.8rem;
+}
+
+.footer-links {
+}
+
+.footer-link {
+  padding: 1.2rem 0;
+  transition: var(--transform-duration);
+  font-size: 1.8rem;
+}
+
+.footer-links .footer-link:not(:last-child) {
+  border-bottom: 0.2rem solid #444;
+}
+
+.footer-link:hover {
+  padding-left: 1.2rem;
+}
+
+.footer-link a {
+  color: #b9b9b9;
+  transition: var(--transform-duration);
+}
+
+.footer-link a::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f101";
+  font-weight: 900;
+  margin-right: 1.2rem;
+  color: var(--main-theme-color);
+}
+
+.footer-link:hover a {
+  color: #fff;
+}
+
+.footer-conct-line {
+  display: flex;
+  align-items: center;
+  color: #b9b9b9;
+  margin-bottom: 3.2rem;
+}
+
+.footer-conct-line i {
+  font-size: 2.4rem;
+  color: var(--main-theme-color);
+  margin-right: 1.8rem;
+}
+
+.footer-conct-line .info {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.footer-conct-line span {
+  display: block;
+}
+
+.footer-gallery {
+}
+
+.footer-gallery img {
+  width: 7.8rem;
+  max-width: 100%;
+  border: 0.3rem solid #fff;
+  margin: 0.3rem;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  margin: 3.2rem auto 0;
+  padding: 2.4rem 0;
+  border-top: 0.2rem solid #444;
+  font-size: 1.8rem;
+}
 
 /* End of  footer */
